@@ -149,7 +149,7 @@ func (d Date) String() string {
 // offset returns the number of days from epoch to d.
 func (d Date) offset() int {
 	n := yearStart[d.year-MinYear]
-	for m := 0; m < d.month-1; m++ {
+	for m := range d.month - 1 {
 		n += monthDays[d.year][m]
 	}
 	return n + d.day - 1
