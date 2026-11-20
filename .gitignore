@@ -1,0 +1,13 @@
+# Test and coverage output
+*.test
+*.out
+coverage.*
+
+# Workspace files
+go.work
+go.work.sum
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
